@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24429" started-at="2017-09-20T05:10:50Z" finished-at="2017-09-20T05:11:15Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="24429" started-at="2017-09-20T05:10:50Z" finished-at="2017-09-20T05:11:15Z">
+      <class name="test1.Loginpage">
+        <test-method status="PASS" signature="declare()[pri:0, instance:test1.Loginpage@6eebc39e]" name="declare" is-config="true" duration-ms="163" started-at="2017-09-20T10:40:50Z" finished-at="2017-09-20T10:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- declare -->
+        <test-method status="PASS" signature="verifyLoginpage()[pri:0, instance:test1.Loginpage@6eebc39e]" name="verifyLoginpage" duration-ms="14655" started-at="2017-09-20T10:40:50Z" finished-at="2017-09-20T10:41:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginpage -->
+        <test-method status="PASS" signature="declare()[pri:0, instance:test1.Loginpage@6eebc39e]" name="declare" is-config="true" duration-ms="3" started-at="2017-09-20T10:41:05Z" finished-at="2017-09-20T10:41:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- declare -->
+        <test-method status="FAIL" signature="verifySignInText()[pri:0, instance:test1.Loginpage@6eebc39e]" name="verifySignInText" duration-ms="28" started-at="2017-09-20T10:41:05Z" finished-at="2017-09-20T10:41:05Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at test1.Loginpage.verifySignInText(Loginpage.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInText -->
+        <test-method status="PASS" signature="launchReportURL()[pri:0, instance:test1.Loginpage@6eebc39e]" name="launchReportURL" is-config="true" duration-ms="9572" started-at="2017-09-20T10:41:05Z" finished-at="2017-09-20T10:41:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchReportURL -->
+        <test-method status="FAIL" signature="testFailure(org.testng.ITestResult)[pri:0, instance:test1.Loginpage@6eebc39e]" name="testFailure" is-config="true" duration-ms="0" started-at="2017-09-20T10:41:15Z" finished-at="2017-09-20T10:41:15Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[wrong number of arguments]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: wrong number of arguments
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1023)
+	at org.testng.TestRunner.run(TestRunner.java:628)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFailure -->
+      </class> <!-- test1.Loginpage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
